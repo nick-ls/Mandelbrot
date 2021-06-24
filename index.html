@@ -2,10 +2,14 @@
 <html>
 <head>
 	<title>Mandelbrot Set</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <canvas id="plane"></canvas>
-<script type="text/javascript" src="script.js"></script>
+<div class="progressContainer">
+	<div class="box"><span id="progress"></span>% done rendering...</div>
+</div>
+<div class="sizeWarning" style="display: none;">Zooming in beyond this point might produce inaccurate results due to the lack of precision in floating point numbers!</div>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
